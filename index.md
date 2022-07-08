@@ -1,5 +1,5 @@
 ﻿# Hand Washer Timer
-This will serve as a brief description of your project. Limit this to three sentences because it can become overly long at that point. This copy should draw the user in and make she/him want to read more.
+The hand washer timer is a contactless timer which, when activated, times the user for 20 seconds as they wash their hands, and upon completion emits a sound to notify the user that they can stop washing their hands. It uses a SuperSonic Sensor in front of which the user places their hands to start the timer. Additionally, after the 20 seconds elapse, a buzzer will sound. 
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
