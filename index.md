@@ -23,4 +23,4 @@ My first milestone was the sensor and buzzer, one of the most important function
 
 
 
-[![First Milestone] [![Milestone 1 (Parav)](https://res.cloudinary.com/marcomontalbano/image/upload/v1657557884/video_to_markdown/images/youtube--G_ayPi7pqe0-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=G_ayPi7pqe0 "Milestone 1 (Parav)")
+[![Milestone 1 (Parav)](https://res.cloudinary.com/marcomontalbano/image/upload/v1657557884/video_to_markdown/images/youtube--G_ayPi7pqe0-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=G_ayPi7pqe0 "Milestone 1 (Parav)")
