@@ -7,7 +7,7 @@ The hand washer timer is a contactless timer which, when activated, times the us
 
 ![Headstone Image](https://github.com/BlueStampEng/BSE_Template_Portfolio/blob/4655d8c4b2f1d0fa5912511d0b39542520b9f88e/branding/BlueStamp-Engineering-Logo-White.png)
 
-
+Picture of the finished product:
 <a href="https://ibb.co/41gj0Z8"><img src="https://i.ibb.co/fDGCTYk/IMG-20220715-102114.jpg" alt="IMG-20220715-102114" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>upload photos</a><br />
   
 # Final Milestone
