@@ -13,7 +13,7 @@ My final milestone is the increased reliability and accuracy of my robot. I amel
 [![Final Milestone](https://res.cloudinary.com/marcomontalbano/image/upload/v1612573869/video_to_markdown/images/youtube--F7M7imOVGug-c05b58ac6eb4c4700831b2b3070cd403.jpg )](https://www.youtube.com/watch?v=F7M7imOVGug&feature=emb_logo "Final Milestone"){:target="_blank" rel="noopener"}
 
 # Second Milestone
-My seond milestone was the 4 LED’s which represented the increments of time elapsing after the sensor was activated. For the next milestone, I will add the buzzer to which will make a sound when the sensor is activated. 
+My seond milestone was the 4 LED’s which represented the increments of time elapsing after the sensor was activated. Additionally, the code was updated to have the sensor detect an object within the range of 1 - 50 cm in front of it. The resistors used for the LED's bottleneck the flow of the current, as only a certain amount is needed for each of them. For the next milestone, I will add the buzzer to which will make a sound when the sensor is activated. 
 
 [![Milestone 2 ](https://res.cloudinary.com/marcomontalbano/image/upload/v1657819855/video_to_markdown/images/youtube--J1Wg8NqKBLo-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/J1Wg8NqKBLo "Milestone 2 ")
 # First Milestone
