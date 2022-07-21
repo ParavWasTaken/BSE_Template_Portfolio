@@ -5,10 +5,14 @@ The hand washer timer is a contactless timer which, when activated, times the us
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
-| Parav | Saratoga Highschool | STEM | Incoming Junior
+| Parav M.| Saratoga Highschool | STEM | Incoming Junior
 
 # Picture of Finished Project
 <a href="https://ibb.co/41gj0Z8"><img src="https://i.ibb.co/fDGCTYk/IMG-20220715-102114.jpg" alt="IMG-20220715-102114" border="0" height="380" width = "570"></a><br />
+
+# Third Milestone
+My third milestone was creating my presentation and finally putting the entire project together. 
+
 
 # Second Milestone
 My second milestone was the 4 LED’s which represented the increments of time elapsing after the sensor was activated. Additionally, the code was updated to have the sensor detect an object within the range of 1 - 50 cm in front of it. The resistors used for the LED's bottleneck the flow of the current, as only a certain amount is needed for each of them. For the next milestone, I will add the buzzer to which will make a sound when the sensor is activated. 
@@ -22,3 +26,97 @@ My first milestone was the sensor and buzzer, one of the most important function
 
 
 [![Milestone 1 (Parav)](https://res.cloudinary.com/marcomontalbano/image/upload/v1657557884/video_to_markdown/images/youtube--G_ayPi7pqe0-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=G_ayPi7pqe0 "Milestone 1 (Parav)")
+
+#Code for processing
+
+...
+
+#define trigger 8
+#define echo 9
+#define buzzer 7
+#define LEDstart 10
+#define LED5 11
+#define LED10 12
+#define LED15 13
+#define LED20 6
+
+int i=0; 
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(trigger, OUTPUT);
+  pinMode(echo, INPUT);
+  pinMode(buzzer, OUTPUT);
+  pinMode(LEDstart, OUTPUT);
+  pinMode(LED5, OUTPUT);
+  pinMode(LED10, OUTPUT);
+  pinMode(LED15, OUTPUT);
+  pinMode(LED20, OUTPUT);
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  digitalWrite(buzzer, HIGH);
+      tone(buzzer,400);
+  long duration, dist;
+  digitalWrite(trigger, HIGH);
+  delay(1000);
+  digitalWrite(trigger, LOW);
+  duration = pulseIn(echo, HIGH);
+  dist = (duration/2)/29.1;
+  delay(10);
+ if(dist <= 50 && i==0)
+ {
+  digitalWrite(LEDstart, HIGH);
+  delay(5000);
+  digitalWrite(LED5, HIGH);
+  delay(5000);
+  digitalWrite(LED5, LOW);
+  digitalWrite(LED10, HIGH);
+  delay(5000);
+  digitalWrite(LED10, LOW);
+  digitalWrite(LED15, HIGH);
+  delay(5000);
+  digitalWrite(LED15, LOW);
+  digitalWrite(LED20, HIGH);
+  for (int j=0; j<5; j++)
+  {
+      digitalWrite(buzzer, HIGH);
+      tone(buzzer,400);
+      delay(10);
+     digitalWrite(buzzer, LOW);
+     noTone(buzzer);
+     delay(1000);
+  }
+  digitalWrite(buzzer, HIGH);
+  tone(buzzer,400);
+  i=1;
+ }
+ long duration1, dist1;
+  digitalWrite(trigger, HIGH);
+  delay(1000);
+  digitalWrite(trigger, LOW);
+  duration1 = pulseIn(echo, HIGH);
+  dist1 = (duration1/2)/29.1;
+  if (dist1<=50 && i==1)
+  {
+     digitalWrite(LED20, LOW);
+    digitalWrite(buzzer, LOW);
+    digitalWrite(LEDstart, LOW);
+    i=0;
+  }
+  
+}
+...
+| Item | Qty | Price | Where to Buy |
+| ------------- | ------------- | ------------- | ------------- |
+| Adeept Robotic Arm Kit  | 1  | $64.99  | https://www.amazon.com/dp/B087R8DLG6 |
+| Breadboard  | 1 |  $6.75  | https://www.amazon.com/BB400-Solderless-Plug-BreadBoard-tie-points/dp/B0040Z1ERO |
+| Potentiometer  | 1 | $1.85  |  https://www.tubesandmore.com/products/potentiometer-alpha-linear-38-bushing  |
+| Jumper Wires  | 6 | 10¢/wire  |  https://www.amazon.com/Breadboard-Jumper-Wire-75pcs-pack/dp/B0040DEI9M |
+| Arduino Uno Board  | 1  | $27.60  | https://store-usa.arduino.cc/products/arduino-uno-rev3?selectedStore=us  |
+| Arduino IDE  | 1  | $0  | https://www.arduino.cc/en/software/ |
+| LED | 5 | $3.05 | https://www.digikey.com/en/products/detail/rohm-semiconductor/SLR-56VR3F/636992?utm_adgroup=Optoelectronics&utm_source=google&utm_medium=cpc&utm_campaign=Shopping_Supplier_Rohm%20Semiconductor_0846_Co-op&utm_term=&utm_content=Optoelectronics&gclid=Cj0KCQjw8uOWBhDXARIsAOxKJ2FU9rfIXor1_ovmAyZNrv5uUknvSMhgKXuGtCSr881k_zyMmj8_gUkaAgbUEALw_wcB |
+| Buzzer | 1 | $0.84 | https://www.digikey.com/en/products/detail/myntahl-dba-east-electronics/TFM-59DA-5/12817555?utm_adgroup=MYNTAHL%20DBA%20EAST%20ELECTRONICS&utm_source=google&utm_medium=cpc&utm_campaign=Shopping_DK%2BSupplier_Tier%202%20-%20Block%201&utm_term=&utm_content=MYNTAHL%20DBA%20EAST%20ELECTRONICS&gclid=Cj0KCQjw8uOWBhDXARIsAOxKJ2HrQSkjrz0rbGsENKaMcKiDCeonQmNptcHSXycSjm9Z3pzBGmE4yYgaAv-HEALw_wcB
+| UltraSonic | 1 | 3.95 | https://www.digikey.com/en/products/detail/adafruit-industries-llc/3942/9658069?utm_adgroup=Temperature%20Sensors%20-%20NTC%20Thermistors&utm_source=google&utm_medium=cpc&utm_campaign=Shopping_Product_Sensors%2C%20Transducers_NEW&utm_term=&utm_content=Temperature%20Sensors%20-%20NTC%20Thermistors&gclid=Cj0KCQjw8uOWBhDXARIsAOxKJ2GRJr-YuEC5TYBnVz52mJ3fxJ0dQcGTH9WjiTcOlsTtiYiEeHZa5gUaAh4VEALw_wcB
