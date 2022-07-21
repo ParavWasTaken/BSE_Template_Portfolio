@@ -1,14 +1,18 @@
 ﻿# Hand Washer Timer
 The hand washer timer is a contactless timer which, when activated, times the user for 20 seconds as they wash their hands, and upon completion emits a sound to notify the user that they can stop washing their hands. It uses a SuperSonic Sensor in front of which the user places their hands to start the timer. Additionally, after the 20 seconds elapse, a buzzer will sound. 
 
+<p align = "center">
 <a href="https://ibb.co/rwz22pD"><img src="https://i.ibb.co/tJvpp2V/IMG-20220718-093944.jpg" alt="IMG-20220718-093944" border="0" height="700" width = "570"></a><br />
+</p>
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
 | Parav M.| Saratoga Highschool | STEM | Incoming Junior
 
 # Picture of Finished Project
+<p align = "center">
 <a href="https://ibb.co/41gj0Z8"><img src="https://i.ibb.co/fDGCTYk/IMG-20220715-102114.jpg" alt="IMG-20220715-102114" border="0" height="380" width = "570"></a><br />
+</p>
 
 # Third Milestone
 My third milestone was creating my presentation and finally putting the entire project together. I added the buzzer which continued for the entire 20 second duration, and only emitted sound when the sensor detected an object in front of it. When the last LED blinks, the uniform buzzing noise segments into isolated blinking sounds in succession, indicating the completion of the timer.   
@@ -43,7 +47,10 @@ This is a table containing all the items needed for the project. It contains the
 | UltraSonic | 1 | 3.95 | https://www.digikey.com/en/products/detail/adafruit-industries-llc/3942/9658069?utm_adgroup=Temperature%20Sensors%20-%20NTC%20Thermistors&utm_source=google&utm_medium=cpc&utm_campaign=Shopping_Product_Sensors%2C%20Transducers_NEW&utm_term=&utm_content=Temperature%20Sensors%20-%20NTC%20Thermistors&gclid=Cj0KCQjw8uOWBhDXARIsAOxKJ2GRJr-YuEC5TYBnVz52mJ3fxJ0dQcGTH9WjiTcOlsTtiYiEeHZa5gUaAh4VEALw_wcB
 
 # Schematic
+
+<p align="center">
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/CsrdRQq/schematic.png" alt="schematic" border="0"></a>
+</p>
 
 # Steps to Recreate the Project
 Use the bill of materials above to obtain the components of the project. Ideally, each LED should have a distinct color. One of these LED's should be used as the start, which blinks upon the timer's activation. Put the SuperSonic sensor, the LED's, and buzzer, on Breadboard as shown in the project image. Use the schematic above to wire the the main components. Make sure that the sensor detects the object in front of it from a range of 1 - 30 cm inclusive, that the starting LED momentarily lights up, and that, afterwards, the row of the remaining four LEDs light up in succession for every 5 second interval. 
