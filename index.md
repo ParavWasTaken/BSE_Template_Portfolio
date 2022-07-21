@@ -1,7 +1,7 @@
 ﻿# Hand Washer Timer
 The hand washer timer is a contactless timer which, when activated, times the user for 20 seconds as they wash their hands, and upon completion emits a sound to notify the user that they can stop washing their hands. It uses a SuperSonic Sensor in front of which the user places their hands to start the timer. Additionally, after the 20 seconds elapse, a buzzer will sound. 
 
-<a href="https://ibb.co/rwz22pD"><img src="https://i.ibb.co/tJvpp2V/IMG-20220718-093944.jpg" alt="IMG-20220718-093944" border="0" height="300" width = "570"></a><br />
+<a href="https://ibb.co/rwz22pD"><img src="https://i.ibb.co/tJvpp2V/IMG-20220718-093944.jpg" alt="IMG-20220718-093944" border="0" height="700" width = "570"></a><br />
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
