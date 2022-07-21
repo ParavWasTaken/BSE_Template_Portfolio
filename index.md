@@ -19,14 +19,35 @@ My third milestone was creating my presentation and finally putting the entire p
 My second milestone was the 4 LED’s which represented the increments of time elapsing after the sensor was activated. Additionally, the code was updated to have the sensor detect an object within the range of 1 - 50 cm in front of it. The resistors used for the LED's bottleneck the flow of the current, as only a certain amount is needed for each of them. For the next milestone, I will add the buzzer to which will make a sound when the sensor is activated. 
 
 [![Milestone 2 ](https://res.cloudinary.com/marcomontalbano/image/upload/v1657819855/video_to_markdown/images/youtube--J1Wg8NqKBLo-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/J1Wg8NqKBLo "Milestone 2 ")
+
 # First Milestone
   
-
 My first milestone was the sensor and buzzer, one of the most important functional components for the project, since it allows one to activate the timer, and to have it produce the sound which indicates said activation, in a contactless fashion. In the code, the SuperSonic Sensor will only detect an object in front of it from a range of 5 to 20 cm inclusive. So if one were to place an object directly in front of it, which would basically be 0 cm away, there is no detection, and likewise, if one were to go more than 20 cm away from it, there would also be no detection. Through the wiring, the code is being passed into the arduino, the arduino provides the current, the current then passes around to all of the components on the breadboard, so that both the LED and the buzzer will activate simultaneously when the sensor does. The resistor regulates the flow of the electrical current in the circuit.
 
-
-
 [![Milestone 1 (Parav)](https://res.cloudinary.com/marcomontalbano/image/upload/v1657557884/video_to_markdown/images/youtube--G_ayPi7pqe0-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=G_ayPi7pqe0 "Milestone 1 (Parav)")
+
+
+
+# Bill of Materials 
+
+This is a table containing all the items needed for the project. It contains the item, quantity, price, and where to buy the item.
+
+| Item | Qty | Price | Where to Buy |
+| ------------- | ------------- | ------------- | ------------- |
+| Breadboard  | 1 |  $6.75  | https://www.amazon.com/BB400-Solderless-Plug-BreadBoard-tie-points/dp/B0040Z1ERO |
+| Jumper Wires  | 6 | 10¢/wire  |  https://www.amazon.com/Breadboard-Jumper-Wire-75pcs-pack/dp/B0040DEI9M |
+| Arduino Uno Board  | 1  | $27.60  | https://store-usa.arduino.cc/products/arduino-uno-rev3?selectedStore=us  |
+| Arduino IDE  | 1  | $0  | https://www.arduino.cc/en/software/ |
+| LED | 5 | $3.05 | https://www.digikey.com/en/products/detail/rohm-semiconductor/SLR-56VR3F/636992?utm_adgroup=Optoelectronics&utm_source=google&utm_medium=cpc&utm_campaign=Shopping_Supplier_Rohm%20Semiconductor_0846_Co-op&utm_term=&utm_content=Optoelectronics&gclid=Cj0KCQjw8uOWBhDXARIsAOxKJ2FU9rfIXor1_ovmAyZNrv5uUknvSMhgKXuGtCSr881k_zyMmj8_gUkaAgbUEALw_wcB |
+| Buzzer | 1 | $0.84 | https://www.digikey.com/en/products/detail/myntahl-dba-east-electronics/TFM-59DA-5/12817555?utm_adgroup=MYNTAHL%20DBA%20EAST%20ELECTRONICS&utm_source=google&utm_medium=cpc&utm_campaign=Shopping_DK%2BSupplier_Tier%202%20-%20Block%201&utm_term=&utm_content=MYNTAHL%20DBA%20EAST%20ELECTRONICS&gclid=Cj0KCQjw8uOWBhDXARIsAOxKJ2HrQSkjrz0rbGsENKaMcKiDCeonQmNptcHSXycSjm9Z3pzBGmE4yYgaAv-HEALw_wcB
+| UltraSonic | 1 | 3.95 | https://www.digikey.com/en/products/detail/adafruit-industries-llc/3942/9658069?utm_adgroup=Temperature%20Sensors%20-%20NTC%20Thermistors&utm_source=google&utm_medium=cpc&utm_campaign=Shopping_Product_Sensors%2C%20Transducers_NEW&utm_term=&utm_content=Temperature%20Sensors%20-%20NTC%20Thermistors&gclid=Cj0KCQjw8uOWBhDXARIsAOxKJ2GRJr-YuEC5TYBnVz52mJ3fxJ0dQcGTH9WjiTcOlsTtiYiEeHZa5gUaAh4VEALw_wcB
+
+# Schematic
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/CsrdRQq/schematic.png" alt="schematic" border="0"></a>
+
+# Steps to Recreate the Project
+Use the bill of materials above to obtain the components of the project. Ideally, each LED should have a distinct color. One of these LED's should be used as the start, which blinks upon the timer's activation. Put the SuperSonic sensor, the LED's, and buzzer, on Breadboard as shown in the project image. Use the schematic above to wire the the main components. Make sure that the sensor detects the object in front of it from a range of 1 - 30 cm inclusive, that the starting LED momentarily lights up, and that, afterwards, the row of the remaining four LEDs light up in succession for every 5 second interval. 
+
 
 # Code for processing
 
@@ -109,19 +130,3 @@ void loop() {
   
 }
 ```
-
-# Bill of Materials 
-
-This is a table containing all the items needed for milestone one and the robotic arm. It contains the item, quantity, price, and where to buy the item.
-
-| Item | Qty | Price | Where to Buy |
-| ------------- | ------------- | ------------- | ------------- |
-| Adeept Robotic Arm Kit  | 1  | $64.99  | https://www.amazon.com/dp/B087R8DLG6 |
-| Breadboard  | 1 |  $6.75  | https://www.amazon.com/BB400-Solderless-Plug-BreadBoard-tie-points/dp/B0040Z1ERO |
-| Potentiometer  | 1 | $1.85  |  https://www.tubesandmore.com/products/potentiometer-alpha-linear-38-bushing  |
-| Jumper Wires  | 6 | 10¢/wire  |  https://www.amazon.com/Breadboard-Jumper-Wire-75pcs-pack/dp/B0040DEI9M |
-| Arduino Uno Board  | 1  | $27.60  | https://store-usa.arduino.cc/products/arduino-uno-rev3?selectedStore=us  |
-| Arduino IDE  | 1  | $0  | https://www.arduino.cc/en/software/ |
-| LED | 5 | $3.05 | https://www.digikey.com/en/products/detail/rohm-semiconductor/SLR-56VR3F/636992?utm_adgroup=Optoelectronics&utm_source=google&utm_medium=cpc&utm_campaign=Shopping_Supplier_Rohm%20Semiconductor_0846_Co-op&utm_term=&utm_content=Optoelectronics&gclid=Cj0KCQjw8uOWBhDXARIsAOxKJ2FU9rfIXor1_ovmAyZNrv5uUknvSMhgKXuGtCSr881k_zyMmj8_gUkaAgbUEALw_wcB |
-| Buzzer | 1 | $0.84 | https://www.digikey.com/en/products/detail/myntahl-dba-east-electronics/TFM-59DA-5/12817555?utm_adgroup=MYNTAHL%20DBA%20EAST%20ELECTRONICS&utm_source=google&utm_medium=cpc&utm_campaign=Shopping_DK%2BSupplier_Tier%202%20-%20Block%201&utm_term=&utm_content=MYNTAHL%20DBA%20EAST%20ELECTRONICS&gclid=Cj0KCQjw8uOWBhDXARIsAOxKJ2HrQSkjrz0rbGsENKaMcKiDCeonQmNptcHSXycSjm9Z3pzBGmE4yYgaAv-HEALw_wcB
-| UltraSonic | 1 | 3.95 | https://www.digikey.com/en/products/detail/adafruit-industries-llc/3942/9658069?utm_adgroup=Temperature%20Sensors%20-%20NTC%20Thermistors&utm_source=google&utm_medium=cpc&utm_campaign=Shopping_Product_Sensors%2C%20Transducers_NEW&utm_term=&utm_content=Temperature%20Sensors%20-%20NTC%20Thermistors&gclid=Cj0KCQjw8uOWBhDXARIsAOxKJ2GRJr-YuEC5TYBnVz52mJ3fxJ0dQcGTH9WjiTcOlsTtiYiEeHZa5gUaAh4VEALw_wcB
