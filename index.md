@@ -11,7 +11,7 @@ The hand washer timer is a contactless timer which, when activated, times the us
 <a href="https://ibb.co/41gj0Z8"><img src="https://i.ibb.co/fDGCTYk/IMG-20220715-102114.jpg" alt="IMG-20220715-102114" border="0" height="380" width = "570"></a><br />
 
 # Third Milestone
-My third milestone was creating my presentation and finally putting the entire project together. I added the buzzer which continued for the entire 20 second duration, and only emitted sound when the sensor detected an object in front of it. When the last LED blink, the uniform buzzing noise segments into isolated blinking sounds in succession, indicating the completion of the timer.   
+My third milestone was creating my presentation and finally putting the entire project together. I added the buzzer which continued for the entire 20 second duration, and only emitted sound when the sensor detected an object in front of it. When the last LED blinks, the uniform buzzing noise segments into isolated blinking sounds in succession, indicating the completion of the timer.   
 
 [![Milestone 3](https://res.cloudinary.com/marcomontalbano/image/upload/v1658422902/video_to_markdown/images/youtube--RfLe5IRrhvs-c05b58ac6eb4c4700831b2b3070cd403.jpg)]( https://youtu.be/RfLe5IRrhvs "Milestone 3")
 
@@ -31,8 +31,6 @@ My first milestone was the sensor and buzzer, one of the most important function
 # Code for processing
 
 ```
-
-
 #define trigger 8
 #define echo 9
 #define buzzer 7
@@ -111,6 +109,11 @@ void loop() {
   
 }
 ```
+
+# Bill of Materials 
+
+This is a table containing all the items needed for milestone one and the robotic arm. It contains the item, quantity, price, and where to buy the item.
+
 | Item | Qty | Price | Where to Buy |
 | ------------- | ------------- | ------------- | ------------- |
 | Adeept Robotic Arm Kit  | 1  | $64.99  | https://www.amazon.com/dp/B087R8DLG6 |
