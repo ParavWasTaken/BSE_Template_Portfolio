@@ -29,7 +29,8 @@ My first milestone was the sensor and buzzer, one of the most important function
 
 #Code for processing
 
-...
+```
+
 
 #define trigger 8
 #define echo 9
@@ -108,7 +109,7 @@ void loop() {
   }
   
 }
-...
+```
 | Item | Qty | Price | Where to Buy |
 | ------------- | ------------- | ------------- | ------------- |
 | Adeept Robotic Arm Kit  | 1  | $64.99  | https://www.amazon.com/dp/B087R8DLG6 |
