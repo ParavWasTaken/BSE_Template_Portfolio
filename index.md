@@ -26,7 +26,7 @@ My second milestone was the 4 LED’s which represented the increments of time e
 
 <p align = "center">
 [![Milestone 2 ](https://res.cloudinary.com/marcomontalbano/image/upload/v1657819855/video_to_markdown/images/youtube--J1Wg8NqKBLo-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/J1Wg8NqKBLo "Milestone 2 ")
-
+</p>
 
 # First Milestone
   
